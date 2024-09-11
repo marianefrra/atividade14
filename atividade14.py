@@ -3,9 +3,20 @@
 # 5 ≤ Média < 7: Recuperação
 # Média < 5: Reprovado
 
-nota = float(input("digite a nota do aluno"))
+n1 = float(input("digite a nota 1"))
+n2 = float(input("digite a nota 2"))
+n3 = float(input("digite a nota 3"))
 
-if nota >=7:
+#calcule a media 
+
+media = (n1+n2+n3) /3
+print(f'a média é {media}')
+
+#aprovação
+
+if media >=7:
     print("aprovado")
-else:
-    print ("reprovado")
+elif 5 <= media <7:
+    print("recuperação")
+elif media <5:
+    print("reprovado")
